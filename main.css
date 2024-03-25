@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    padding: 16px 0 0;
+    margin-bottom: 56px;
+    padding-bottom: 1%;
+    background-color: #2293a1;
+    color: #fff;
+}
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+form p{
+    margin-left: 1%;
+    text-align: center;
+    font-size: larger;
+}
+
+.clear{
+    clear: both;
+}
+
+.conteudo{
+    display: grid;
+    grid-template-columns: 100% 30%; 
+}
+
+.loja img{
+    max-width: 100%;
+}
+
+.sobre-a-loja .loja{
+    display: flex;
+    font-size: 1em;
+}
+
+.sobre-a-loja .loja img{
+    margin-right: 50px;
+}
+
+.sobre-a-loja{
+    margin-bottom: 56px;
+}
+
+section h2{
+    margin-bottom: 32px;
+    border-bottom: 4px solid #2293a1;
+    color: #2293a1;
+}
+
+section h3, p{
+    padding-bottom: 6%;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 1%;
+    row-gap: 5%;
+    text-align: center;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #2293a1;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 100px;
+}
+
+.price{
+    margin: 16px 0;
+    display: block;
+}
+
+@media screen and (max-width: 640px){
+    .conteudo{
+        display: block; 
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .sobre-a-loja .loja{
+        display: block;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .sobre-a-loja .loja img{
+        margin-right: 0;
+    }
+
+    .produtos{
+        display: block;
+        text-align: center;
+    }
+
+    .produtos .loja{
+        margin-bottom: 32px;
+        align-items: center;
+    }
+
+    header .container{
+        justify-content: space-between;
+    }
+
+    section h2{
+        padding-top: 4%;
+    }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+
+    .container{
+        max-width: 90%;
+    }
+
+    .sobre-a-loja .noticia{
+        font-size: 1em;
+    }
+
+    .produtos{
+        grid-template-columns: repeat(2, 49%);
+        text-align: center;
+    }
+}
+
